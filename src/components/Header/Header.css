@@ -1,0 +1,66 @@
+.headerTop {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 25px;
+	align-items: center;
+}
+.borderBottom {
+	border-bottom: 1px solid rgba(225, 223, 218, 1);
+}
+.headTopItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 15px;
+}
+.hInnerItem {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+}
+.hInnerInfo {
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 400;
+	color: rgba(34, 34, 32, 1);
+}
+.headTopInfo {
+	font-size: 12px;
+	line-height: 20px;
+	font-weight: 500;
+	color: rgba(157, 156, 152, 1);
+}
+.heartImg {
+	margin-right: 20px;
+}
+.headPriceWrap {
+	border: 1px solid rgba(247, 247, 247, 1);
+	background-color: rgba(247, 247, 247, 1);
+	border-radius: 50px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 5px;
+	padding-right: 14px;
+}
+.numberThree {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(236, 16, 38, 1);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	padding-inline: 10px 12px 9px 13px;
+	height: 36px;
+	width: 36px;
+	color: white;
+	border-radius: 50px;
+}
+.headprice {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(34, 34, 32, 1);
+}
