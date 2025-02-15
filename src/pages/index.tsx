@@ -1,442 +1,571 @@
-import Head from "next/head";
 import React from "react";
+
+import styles from "../styles/Portfolio.module.css";
 
 const index = () => {
 	return (
 		<>
-			<Head>
-				<link rel="stylesheet" href="/styles/Portfolio/Portfolio.css" />
-			</Head>
-			<div className="portfolioWrapper">
-				<div className="headerBottom">
-					<div className="hBottomLeft">
-						<div className="headMenu">
-							<img src="/Images/menu.svg" alt="" className="headBurger" />
-							Каталог
-						</div>
-						<img src="/Images/frame.svg" alt="" className="headFrame" />
-						<div className="inputWrapper">
-							<p className="poisk">Поиск</p>
-							<input
-								type="text"
-								className="headinput"
-								placeholder="(Например: термокружка)"
-							/>
-							<img className="searchIcon" src="/Images/search.svg" alt="" />
-						</div>
-					</div>
-
-					<div className="hBottomRight">
-						<div className="relativeNum redNum">
-							new
-							<p className="absoluteNum">243</p>
-						</div>
-						<div className="relativeNum greenNum">
-							hits
-							<p className="absoluteNum">237</p>
-						</div>
-					</div>
-				</div>
-
-				<div className="borderBottom"></div>
-
-				{/* real body start here */}
-				<div className="bodyHead">
-					<div className="bodyHeadItem">
-						<img src="/Images/arrow-left.svg" alt="" className="arrowLeft" />
-					</div>
-					<div className="bodyHeadItem">
-						<p className="bodyHeadInfo">
-							<span className="redPercent">30%</span> Cкидка при первом заказе!
-							🎉
-						</p>
-						<button className="bodyHeadBtn">ПОДРОБНЕЕ</button>
-					</div>
-					<div className="bodyHeadItem">
-						<img src="/Images/arrow-right.svg" alt="" className="arrowLeft" />
-					</div>
-				</div>
-
-				<p className="justP">
-					Промо одежда / Портативные колонки / Беспроводная колонка Chubby /{" "}
-					<span className="lightRed">Артикул 7557.30</span>
-				</p>
-
-				{/* first part */}
-				<div className="firstPart">
-					<div className="firstPartLeft">
-						<div className="leftLeftPart">
-							<img
-								src="/Images/firstBodyImg.svg"
-								alt=""
-								className="leftLeftImg"
-							/>
-						</div>
-						<div className="leftRightPart">
-							<div className="leftRightItem leftRightRelative">
+			<div className={styles.portfolioWrapper}>
+				<div>
+					<div className={styles.headerBottom}>
+						<div className={styles.hBottomLeft}>
+							<div className={styles.headMenu}>
 								<img
-									src="/Images/waterBottle1.svg"
+									src="/Images/menu.svg"
 									alt=""
-									className="leftRightImg"
+									className={styles.headBurger}
+								/>
+								Каталог
+							</div>
+							<img
+								src="/Images/frame.svg"
+								alt=""
+								className={styles.headFrame}
+							/>
+							<div className={styles.inputWrapper}>
+								<p className={styles.poisk}>Поиск</p>
+								<input
+									type="text"
+									className={styles.headinput}
+									placeholder="(Например: термокружка)"
 								/>
 								<img
-									src="/Images/arrowBottom.svg"
+									className={styles.searchIcon}
+									src="/Images/search.svg"
 									alt=""
-									className="arrowBottom"
 								/>
-								<p className="enterToCatalog">Перейти в каталог</p>
 							</div>
-							<div className="leftRightItem">
-								<img src="/Images/book.png" alt="" className="leftRightImg" />
+						</div>
+
+						<div className={styles.hBottomRight}>
+							<div className={`${styles.relativeNum} ${styles.redNum}`}>
+								new
+								<p className={styles.absoluteNum}>243</p>
+							</div>
+							<div className={`${styles.relativeNum} ${styles.greenNum}`}>
+								hits
+								<p className={styles.absoluteNum}>237</p>
 							</div>
 						</div>
 					</div>
 
-					<div className="firstPartRight">
-						<div className="rightLeftPart">
-							<h2 className="rightPartTitle">скачать презентацию</h2>
-							<div className="rightBtns">
-								<button className="rightBtn">ЗАКАЗАТЬ</button>
-								<button className="rightBtn">СКАЧАТЬ</button>
-							</div>
-						</div>
-						<div className="rightRightPart">
+					<div className={styles.borderBottom}></div>
+
+					<div className={styles.bodyHead}>
+						<div className={styles.bodyHeadItem}>
 							<img
-								src="/Images/magazine.svg"
+								src="/Images/arrow-left.svg"
 								alt=""
-								className="rightRightImg"
+								className={styles.arrowLeft}
+							/>
+						</div>
+						<div className={styles.bodyHeadItem}>
+							<p className={styles.bodyHeadInfo}>
+								<span className={styles.redPercent}>30%</span> Cкидка при первом
+								заказе! 🎉
+							</p>
+							<button className={styles.bodyHeadBtn}>ПОДРОБНЕЕ</button>
+						</div>
+						<div className={styles.bodyHeadItem}>
+							<img
+								src="/Images/arrow-right.svg"
+								alt=""
+								className={styles.arrowLeft}
 							/>
 						</div>
 					</div>
-				</div>
 
-				{/* second part */}
-				<div className="firstPart firstPartSec">
-					<div className="firstPartRight firstPartRightSec">
-						<div className="rightLeftPart rightLeftPartSec">
-							<h2 className="rightPartTitle">давайте займемся подарками!</h2>
-							<div className="rightBtns">
-								<button className="rightBtn">ПОДРОБНЕЕ</button>
-								<button className="rightBtn">СКАЧАТЬ</button>
+					<p className={styles.justP}>
+						Промо одежда / Портативные колонки / Беспроводная колонка Chubby /
+						<span className={styles.lightRed}> Артикул 7557.30</span>
+					</p>
+
+					{/* first part */}
+					<div className={styles.firstPart}>
+						<div className={styles.firstPartLeft}>
+							<div className={styles.leftLeftPart}>
+								<img
+									src="/Images/firstBodyImg.svg"
+									alt=""
+									className={styles.leftLeftImg}
+								/>
+							</div>
+							<div className={styles.leftRightPart}>
+								<div
+									className={`${styles.leftRightItem} ${styles.leftRightRelative}`}
+								>
+									<img
+										src="/Images/waterBottle1.svg"
+										alt=""
+										className={styles.leftRightImg}
+									/>
+									<img
+										src="/Images/arrowBottom.svg"
+										alt=""
+										className={styles.arrowBottom}
+									/>
+									<p className={styles.enterToCatalog}>Перейти в каталог</p>
+								</div>
+								<div className={styles.leftRightItem}>
+									<img
+										src="/Images/book.png"
+										alt=""
+										className={styles.leftRightImg}
+									/>
+								</div>
 							</div>
 						</div>
-						<div className="rightRightPart">
-							<img
-								src="/Images/waterBottle2.png"
-								alt=""
-								className="rightRightImg"
-							/>
-						</div>
 
-						<div className="lines">
-							<div className="line darkWhite"></div>
-							<div className="line"></div>
-							<div className="line"></div>
-							<div className="line"></div>
+						<div className={styles.firstPartRight}>
+							<div className={styles.rightLeftPart}>
+								<h2 className={styles.rightPartTitle}>скачать презентацию</h2>
+								<div className={styles.rightBtns}>
+									<button className={styles.rightBtn}>ЗАКАЗАТЬ</button>
+									<button className={styles.rightBtn}>СКАЧАТЬ</button>
+								</div>
+							</div>
+							<div className={styles.rightRightPart}>
+								<img
+									src="/Images/magazine.svg"
+									alt=""
+									className={styles.rightRightImg}
+								/>
+							</div>
 						</div>
 					</div>
 
-					<div className="firstPartLeft firstPartLeftSec">
-						<div className="leftLeftPart">
-							<img
-								src="/Images/waterBottle3.svg"
-								alt=""
-								className="leftLeftImg"
-							/>
-						</div>
-						<div className="leftRightPart leftRightPartSec">
-							<div className="leftRightItem leftRightItemSec leftRightRelative">
-								<img src="/Images/camera.png" alt="" className="leftRightImg" />
+					{/* second part */}
+					<div className={`${styles.firstPart} ${styles.firstPartSec}`}>
+						<div
+							className={`${styles.firstPartRight} ${styles.firstPartRightSec}`}
+						>
+							<div
+								className={`${styles.rightLeftPart} ${styles.rightLeftPartSec}`}
+							>
+								<h2 className={styles.rightPartTitle}>
+									давайте займемся подарками!
+								</h2>
+								<div className={styles.rightBtns}>
+									<button className={styles.rightBtn}>ПОДРОБНЕЕ</button>
+									<button className={styles.rightBtn}>СКАЧАТЬ</button>
+								</div>
 							</div>
-							<div className="leftRightItem leftRightItemSec">
-								<img src="/Images/cap.png" alt="" className="leftRightImg" />
+							<div className={styles.rightRightPart}>
+								<img
+									src="/Images/waterBottle2.png"
+									alt=""
+									className={styles.rightRightImg}
+								/>
+							</div>
+
+							<div className={styles.lines}>
+								<div className={`${styles.line} ${styles.darkWhite}`}></div>
+								<div className={styles.line}></div>
+								<div className={styles.line}></div>
+								<div className={styles.line}></div>
+							</div>
+						</div>
+
+						<div
+							className={`${styles.firstPartLeft} ${styles.firstPartLeftSec}`}
+						>
+							<div className={styles.leftLeftPart}>
+								<img
+									src="/Images/waterBottle3.svg"
+									alt=""
+									className={styles.leftLeftImg}
+								/>
+							</div>
+							<div
+								className={`${styles.leftRightPart} ${styles.leftRightPartSec}`}
+							>
+								<div
+									className={`${styles.leftRightItem} ${styles.leftRightItemSec} ${styles.leftRightRelative}`}
+								>
+									<img
+										src="/Images/camera.png"
+										alt=""
+										className={styles.leftRightImg}
+									/>
+								</div>
+								<div
+									className={`${styles.leftRightItem} ${styles.leftRightItemSec}`}
+								>
+									<img
+										src="/Images/cap.png"
+										alt=""
+										className={styles.leftRightImg}
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
+
+					{/* third part */}
+					<div className={styles.thirdPart}>
+						<h2 className={styles.thirdPartTitle}>Кто мы?</h2>
+						<h3 className={styles.thirdPartSubTitle}>
+							Позвольте нам представить себя:
+						</h3>
+
+						<ul className={styles.thirdPartUl}>
+							<li className={styles.thirdPartLi}>
+								Maldex – это комплексный сервис по производству сувенирной
+								продукции.
+								<span className={styles.blockSpan1}>
+									С нашей помощью компании смогут расширить клиентскую базу,
+									повысить лояльность аудитории.
+								</span>
+							</li>
+							<li className={styles.thirdPartLi}>
+								Наша команда берет на себя весь спектр задач по ведению сделки.
+								<span className={styles.blockSpan1}>
+									Мы изготовим, забрендируем и доставим ваш бизнес-сувенир.
+								</span>
+							</li>
+							<li className={styles.thirdPartLi}>
+								У Вас есть идеи собственных сувениров? – Прекрасно!
+								<span className={styles.blockSpan1}>
+									С нашей помощью вы можете изготовить любой сувенир по
+									индивидуальному дизайну.
+								</span>
+							</li>
+							<li className={styles.thirdPartLi}>
+								{"Бизнес-сувениры"} из России, Европы, Америки и Китая. Более{" "}
+								<span className={styles.bolder}>1 000 000</span> подарков со
+								всего мира.
+							</li>
+							<li className={styles.thirdPartLi}>
+								Maldex – производи правильное впечатление!
+							</li>
+						</ul>
+					</div>
 				</div>
 
-				{/* third part */}
-				<div className="thirdPart">
-					<h2 className="thirdPartTitle">Кто мы?</h2>
-					<h3 className="thirdPartSubTitle">Позвольте нам представить себя:</h3>
-
-					<ul className="thirdPartUl">
-						<li className="thirdPartLi">
-							Maldex – это комплексный сервис по производству сувенирной
-							продукции для российских и международных компаний.{" "}
-							<span className="blockSpan1">
-								С нашей помощью компании смогут расширить клиентскую базу,
-								повысить лояльность аудитории, укрепить позиции на рынке.
-							</span>
-						</li>
-						<li className="thirdPartLi">
-							Наша команда берет на себя весь спектр задач по ведению сделки,
-							Вам нужно предоставить лишь логотип для нанесения.{" "}
-							<span className="blockSpan1">
-								Мы изготовим, забрендируем и доставим ваш бизнес сувенир.
-							</span>
-						</li>
-						<li className="thirdPartLi">
-							У Вас есть идеи собственных сувениров? – Прекрасно!{" "}
-							<span className="blockSpan1">
-								С нашей помощью вы можете изготовить любой сувенир по
-								индивидуальному дизайну.
-							</span>
-						</li>
-						<li className="thirdPartLi">
-							{"Бизнес-сувениры"} из России, Европы, Америки и Китая. Более{" "}
-							<span className="bolder">1 000 000</span> подарков со всего мира.
-							<span className="blockSpan1">
-								Нам есть что вам предложить! / Нам есть чем вас удивить?
-							</span>
-						</li>
-						<li className="thirdPartLi">
-							Maldex – производи правильное впечатление!
-						</li>
-					</ul>
-				</div>
-
-				{/* fourth part */}
-				<div className="fourthPart">
-					<h2 className="fourthPartTitle">
-						Почему мы? <span className="blueColor">Всё под 1 крышей!</span>
+				{/* Fourth part */}
+				<div className={styles.fourthPart}>
+					<h2 className={styles.fourthPartTitle}>
+						Почему мы?{" "}
+						<span className={styles.blueColor}>Всё под 1 крышей!</span>
 					</h2>
 
-					<div className="fourthBody">
-						<div className="fourthBodyItem">
-							<div className="innerWrapper">
+					<div className={styles.fourthBody}>
+						<div className={styles.fourthBodyItem}>
+							<div className={styles.innerWrapper}>
 								<img
 									src="/Images/fourthFirst.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle firstBlue">Брендинг</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi MarkerfirstBlue">Тампопечать</li>
-									<li className="fourthPartLi MarkerfirstBlue">Вышивка</li>
-									<li className="fourthPartLi MarkerfirstBlue">Шелкография</li>
-									<li className="fourthPartLi MarkerfirstBlue">Гравировка</li>
-									<li className="fourthPartLi MarkerfirstBlue">Деколь</li>
-									<li className="fourthPartLi MarkerfirstBlue">
+								<h3 className={`${styles.fourthSubTitle} ${styles.firstBlue}`}>
+									Брендинг
+								</h3>
+								<ul className={styles.fourthPartUl}>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
+										Тампопечать
+									</li>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
+										Вышивка
+									</li>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
+										Шелкография
+									</li>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
+										Гравировка
+									</li>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
+										Деколь
+									</li>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
 										Термотрансфер
 									</li>
-									<li className="fourthPartLi MarkerfirstBlue">Уф печать</li>
-									<li className="fourthPartLi MarkerfirstBlue">Сублимация</li>
-									<li className="fourthPartLi MarkerfirstBlue">
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
+										Уф печать
+									</li>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
+										Сублимация
+									</li>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
 										Цифровая печать
 									</li>
-									<li className="fourthPartLi MarkerfirstBlue">
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
 										Прямая печать на ткани DTG
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
-							<div className="innerWrapper">
+						<div className={styles.fourthBodyItem}>
+							<div className={styles.innerWrapper}>
 								<img
 									src="/Images/fourthSecond.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle purple">Складирование</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi Markerpurple">
+								<h3 className={`${styles.fourthSubTitle} ${styles.purple}`}>
+									Складирование
+								</h3>
+								<ul className={styles.fourthPartUl}>
+									<li
+										className={`${styles.fourthPartLi} ${styles.Markerpurple}`}
+									>
 										Управление запасами
 									</li>
-									<li className="fourthPartLi Markerpurple">
+									<li
+										className={`${styles.fourthPartLi} ${styles.Markerpurple}`}
+									>
 										Сокращение складских затрат для наших клиентов
 									</li>
-									<li className="fourthPartLi Markerpurple">
+									<li
+										className={`${styles.fourthPartLi} ${styles.Markerpurple}`}
+									>
 										Управление складской инвентаризацией (ушло/пришло)
 									</li>
 								</ul>
 							</div>
 
-							<div className="innerWrapper">
+							<div className={styles.innerWrapper}>
 								<img
 									src="/Images/fourthFifth.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle lightGreen noMarginTop">
+								<h3
+									className={`${styles.fourthSubTitle} ${styles.lightGreen} ${styles.noMarginTop}`}
+								>
 									Логистика
 								</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi MarkerlightGreen">
+								<ul className={styles.fourthPartUl}>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerlightGreen}`}
+									>
 										Фирменная упаковка
 									</li>
-									<li className="fourthPartLi MarkerlightGreen">
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerlightGreen}`}
+									>
 										Бесплатная доставка
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
-							<div className="innerWrapper">
+						<div className={styles.fourthBodyItem}>
+							<div className={styles.innerWrapper}>
 								<img
 									src="/Images/fourthThird.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle yellow">
+								<h3 className={`${styles.fourthSubTitle} ${styles.yellow}`}>
 									Сувениры со всего мира
 								</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi Markeryellow">
+								<ul className={styles.fourthPartUl}>
+									<li
+										className={`${styles.fourthPartLi} ${styles.Markeryellow}`}
+									>
 										Более 1 000 000 наименований
 									</li>
 								</ul>
 
-								<div className="countriesFlag">
-									<div className="country">
+								<div className={styles.countriesFlag}>
+									<div className={styles.country}>
 										<img
 											src="/Images/russia.svg"
 											alt=""
-											className="countryFlag"
+											className={styles.countryFlag}
 										/>
-										<h4 className="countryName">Россия</h4>
+										<h4 className={styles.countryName}>Россия</h4>
 									</div>
-									<div className="country">
+									<div className={styles.country}>
 										<img
 											src="/Images/china.svg"
 											alt=""
-											className="countryFlag"
+											className={styles.countryFlag}
 										/>
-										<h4 className="countryName">Китай</h4>
+										<h4 className={styles.countryName}>Китай</h4>
 									</div>
-									<div className="country">
-										<img src="/Images/usa.svg" alt="" className="countryFlag" />
-										<h4 className="countryName">Америка</h4>
+									<div className={styles.country}>
+										<img
+											src="/Images/usa.svg"
+											alt=""
+											className={styles.countryFlag}
+										/>
+										<h4 className={styles.countryName}>Америка</h4>
 									</div>
-									<div className="country">
+									<div className={styles.country}>
 										<img
 											src="/Images/europa.svg"
 											alt=""
-											className="countryFlag"
+											className={styles.countryFlag}
 										/>
-										<h4 className="countryName">Европа</h4>
+										<h4 className={styles.countryName}>Европа</h4>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
-							<div className="innerWrapper">
+						<div className={styles.fourthBodyItem}>
+							<div className={styles.innerWrapper}>
 								<img
 									src="/Images/fourthFourth.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle red">Дизайн макеты бесплатно</h3>
+								<h3 className={`${styles.fourthSubTitle} ${styles.red}`}>
+									Дизайн макеты бесплатно
+								</h3>
 							</div>
 
-							<div className="innerWrapper flex">
+							<div className={`${styles.innerWrapper} ${styles.flex}`}>
 								<img
 									src="/Images/fourthSixth.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<span className="fourthSubTitle secondBlue">лет на рынке</span>
+								<span
+									className={`${styles.fourthSubTitle} ${styles.secondBlue}`}
+								>
+									лет на рынке
+								</span>
 							</div>
 						</div>
 					</div>
 
-					<h2 className="fourthPartTitle">
-						<span className="blueColor">С заботой о клиентах</span>
+					<h2 className={styles.fourthPartTitle}>
+						<span className={styles.blueColor}>С заботой о клиентах</span>
 					</h2>
 
-					<div className="fourthBody">
-						<div className="fourthBodyItem">
-							<div className="innerWrapper">
+					<div className={styles.fourthBody}>
+						<div className={styles.fourthBodyItem}>
+							<div className={styles.innerWrapper}>
 								<img
 									src="/Images/fourthSeventh.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle lightGreen">
+								<h3 className={`${styles.fourthSubTitle} ${styles.lightGreen}`}>
 									Сборные заказы (gifts case)
 								</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi MarkerlightGreen">
+								<ul className={styles.fourthPartUl}>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerlightGreen}`}
+									>
 										Разработка для вас индивидуальных кейсов/подарочных наборов
 									</li>
 								</ul>
 							</div>
 
-							<div className="innerWrapper mt-40">
+							<div className={`${styles.innerWrapper} ${styles.mt40}`}>
 								<img
 									src="/Images/fourthEleven.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle purple">
+								<h3 className={`${styles.fourthSubTitle} ${styles.purple}`}>
 									При заказе от 50 000 рублей
 								</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi Markerpurple">
+								<ul className={styles.fourthPartUl}>
+									<li
+										className={`${styles.fourthPartLi} ${styles.Markerpurple}`}
+									>
 										10% от стоимости заказа в подарок!
 									</li>
-									<li className="fourthPartLi Markerpurple">
+									<li
+										className={`${styles.fourthPartLi} ${styles.Markerpurple}`}
+									>
 										Подарок из каталога на сумму 5000 рублей
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
-							<div className="innerWrapper">
+						<div className={styles.fourthBodyItem}>
+							<div className={styles.innerWrapper}>
 								<img
 									src="/Images/fourthEighth.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle yellow">Персональный менеджер</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi Markeryellow">
+								<h3 className={`${styles.fourthSubTitle} ${styles.yellow}`}>
+									Персональный менеджер
+								</h3>
+								<ul className={styles.fourthPartUl}>
+									<li
+										className={`${styles.fourthPartLi} ${styles.Markeryellow}`}
+									>
 										Фирменная упаковка
 									</li>
-									<li className="fourthPartLi Markeryellow">
+									<li
+										className={`${styles.fourthPartLi} ${styles.Markeryellow}`}
+									>
 										Бесплатная доставка
 									</li>
 								</ul>
 							</div>
-							<div className="innerWrapper mt-40">
+							<div className={`${styles.innerWrapper} ${styles.mt40}`}>
 								<img
 									src="/Images/fourthTwelve.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle firstBlue">
+								<h3 className={`${styles.fourthSubTitle} ${styles.firstBlue}`}>
 									Персональный менеджер
 								</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi MarkerfirstBlue">
+								<ul className={styles.fourthPartUl}>
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
 										Фирменная упаковка
 									</li>
-									<li className="fourthPartLi MarkerfirstBlue">
+									<li
+										className={`${styles.fourthPartLi} ${styles.MarkerfirstBlue}`}
+									>
 										Бесплатная доставка
 									</li>
 								</ul>
 							</div>
 						</div>
-						<div className="fourthBodyItem">
-							<div className="innerWrapper">
+						<div className={styles.fourthBodyItem}>
+							<div className={styles.innerWrapper}>
 								<img
 									src="/Images/fourthNineth.svg"
 									alt=""
-									className="fourthImg"
+									className={styles.fourthImg}
 								/>
-								<h3 className="fourthSubTitle red">
+								<h3 className={`${styles.fourthSubTitle} ${styles.red}`}>
 									Индивидуальные заказы в Китае
 								</h3>
-								<ul className="fourthPartUl">
-									<li className="fourthPartLi Markerred">
+								<ul className={styles.fourthPartUl}>
+									<li className={`${styles.fourthPartLi} ${styles.Markerred}`}>
 										Поможем воплотить любую идею
 									</li>
-									<li className="fourthPartLi Markerred">Разработка макета</li>
-									<li className="fourthPartLi Markerred">
+									<li className={`${styles.fourthPartLi} ${styles.Markerred}`}>
+										Разработка макета
+									</li>
+									<li className={`${styles.fourthPartLi} ${styles.Markerred}`}>
 										Быстро найдем фабрику
 									</li>
-									<li className="fourthPartLi Markerred">Согласуем образец</li>
-									<li className="fourthPartLi Markerred">
+									<li className={`${styles.fourthPartLi} ${styles.Markerred}`}>
+										Согласуем образец
+									</li>
+									<li className={`${styles.fourthPartLi} ${styles.Markerred}`}>
 										Доставим удобным вам способом
 									</li>
 								</ul>
@@ -444,60 +573,66 @@ const index = () => {
 						</div>
 					</div>
 				</div>
-
-				{/* fifth part */}
-				<div className="fifthPart">
-					<h2 className="fifthPartTitle">
-						Вы будете в <span className="bolder">БОЛЬШОЙ</span> компании друзей
+				{/* Fifth part */}
+				<div className={styles.fifthPart}>
+					<h2 className={styles.fifthPartTitle}>
+						Вы будете в <span className={styles.bolder}>БОЛЬШОЙ</span> компании
+						друзей
 					</h2>
-					<div className="fifthBody">
-						<img src="/Images/fullImg.svg" alt="" className="fifthPartImg" />
+					<div className={styles.fifthBody}>
+						<img
+							src="/Images/fullImg.svg"
+							alt=""
+							className={styles.fifthPartImg}
+						/>
 					</div>
 				</div>
-
-				{/* sixth part */}
-				<div className="sixthPart">
-					<h2 className="sixthPartTitle fifthPartTitle">
-						С <span className="bolder">Maldex</span> просто как{" "}
-						<span className="red">раз</span> <span className="yellow">два</span>{" "}
-						<span className="lightGreen">три</span>
+				{/* Sixth part */}
+				<div className={styles.sixthPart}>
+					<h2 className={styles.sixthPartTitle}>
+						С <span className={styles.bolder}>Maldex</span> просто как{" "}
+						<span className={styles.red}>раз</span>{" "}
+						<span className={styles.yellow}>два</span>{" "}
+						<span className={styles.lightGreen}>три</span>
 					</h2>
 
-					<div className="bottomHead">
-						<div className="bottomHeadItem">
-							<div className="bottomHItemLeft">
+					<div className={styles.bottomHead}>
+						<div className={styles.bottomHeadItem}>
+							<div className={styles.bottomHItemLeft}>
 								<img
 									src="/Images/bottomHead1.png"
 									alt=""
-									className="bottomHeadImg"
+									className={styles.bottomHeadImg}
 								/>
 							</div>
-							<div className="bottomHItemRight">
-								<p className="bottomHeadInfo red">
+							<div className={styles.bottomHItemRight}>
+								<p className={`${styles.bottomHeadInfo} ${styles.red}`}>
 									Оставьте заявку по телефону
 								</p>
-								<a href="tel:88007775919" className="phoneNumber">
+								<a href="tel:88007775919" className={styles.phoneNumber}>
 									8 (800) 777-59-19
 								</a>
-								<p className="anotherOption">либо оформите заказ на сайте</p>
+								<p className={styles.anotherOption}>
+									либо оформите заказ на сайте
+								</p>
 							</div>
 
 							<img
 								src="/Images/arrowLineTop.svg"
 								alt=""
-								className="arrowLineTop"
+								className={styles.arrowLineTop}
 							/>
 						</div>
-						<div className="bottomHeadItem">
-							<div className="bottomHItemLeft">
+						<div className={styles.bottomHeadItem}>
+							<div className={styles.bottomHItemLeft}>
 								<img
 									src="/Images/bottomHead2.png"
 									alt=""
-									className="bottomHeadImg"
+									className={styles.bottomHeadImg}
 								/>
 							</div>
-							<div className="bottomHItemRight">
-								<p className="bottomHeadInfo yellow">
+							<div className={styles.bottomHItemRight}>
+								<p className={`${styles.bottomHeadInfo} ${styles.yellow}`}>
 									Подтвердите заказ у менеджера
 								</p>
 							</div>
@@ -505,145 +640,144 @@ const index = () => {
 							<img
 								src="/Images/arrowLineBottom.svg"
 								alt=""
-								className="arrowLineBottom"
+								className={styles.arrowLineBottom}
 							/>
 						</div>
-						<div className="bottomHeadItem">
-							<div className="bottomHItemLeft">
+						<div className={styles.bottomHeadItem}>
+							<div className={styles.bottomHItemLeft}>
 								<img
 									src="/Images/bottomHead3.png"
 									alt=""
-									className="bottomHeadImg"
+									className={styles.bottomHeadImg}
 								/>
 							</div>
-							<div className="bottomHItemRight">
-								<p className="bottomHeadInfo lightGreen">
+							<div className={styles.bottomHItemRight}>
+								<p className={`${styles.bottomHeadInfo} ${styles.lightGreen}`}>
 									Получите товар курьерской доставкой
 								</p>
-								<p className="anotherOption">
+								<p className={styles.anotherOption}>
 									или в нашем офисе: Варшавское шоссе 35
 								</p>
 							</div>
 						</div>
 					</div>
 
-					<div className="sixthBody">
-						<div className="sixthBodyHead">
-							<div className="sixthBodyHeadItem width60">
-								<h3 className="sixthBodyTitle fifthPartTitle">
-									Сувенирная продукция
-								</h3>
-								<p className="sixthBodyDesc">
+					<div className={styles.sixthBody}>
+						<div className={styles.sixthBodyHead}>
+							<div className={`${styles.sixthBodyHeadItem} ${styles.width60}`}>
+								<h3 className={styles.sixthBodyTitle}>Сувенирная продукция</h3>
+								<p className={styles.sixthBodyDesc}>
 									Каталог «от ручки до ракеты» «от промо до VIP»
 								</p>
-								<p className="sixthBodyDesc">
-									Более <span className="bolder">1 000 000</span> бизнес
+								<p className={styles.sixthBodyDesc}>
+									Более <span className={styles.bolder}>1 000 000</span> бизнес
 									сувениров со всего мира
 								</p>
 
 								<img
 									src="/Images/bottom1.svg"
 									alt=""
-									className="sixthFirstImg bottomRealImg"
+									className={`${styles.sixthFirstImg} ${styles.bottomRealImg}`}
 								/>
 							</div>
-							<div className="sixthBodyHeadItem width40">
+							<div className={`${styles.sixthBodyHeadItem} ${styles.width40}`}>
 								<img
 									src="/Images/bottom2.svg"
 									alt=""
-									className="sixthSecondImg bottomRealImg"
+									className={`${styles.sixthSecondImg} ${styles.bottomRealImg}`}
 								/>
-								<div className="thirdAndFourth">
+								<div className={styles.thirdAndFourth}>
 									<img
 										src="/Images/bottom3.svg"
 										alt=""
-										className="tShirtImg bottomRealImg"
+										className={`${styles.tShirtImg} ${styles.bottomRealImg}`}
 									/>
 									<img
 										src="/Images/bottom4real.svg"
 										alt=""
-										className="tShirtImg bottomRealImg"
+										className={`${styles.tShirtImg} ${styles.bottomRealImg}`}
 									/>
 								</div>
 							</div>
-							<div className="sixthBodyHeadItem width40">
+							<div className={`${styles.sixthBodyHeadItem} ${styles.width40}`}>
 								<img
 									src="/Images/bottom4.svg"
 									alt=""
-									className="sixthFifthImg bottomRealImg"
+									className={`${styles.sixthFifthImg} ${styles.bottomRealImg}`}
 								/>
 							</div>
 						</div>
 
-						<div className="sixthBodyCenter">
-							<div className="sixthCenterItem smallImgWrap">
+						<div className={styles.sixthBodyCenter}>
+							<div
+								className={`${styles.sixthCenterItem} ${styles.smallImgWrap}`}
+							>
 								<img
 									src="Images/realSmallImg.png"
 									alt=""
-									className="sixthCenterImg smallImg"
+									className={`${styles.sixthCenterImg} ${styles.smallImg}`}
 								/>
 							</div>
-							<div className="sixthCenterItem">
+							<div className={styles.sixthCenterItem}>
 								<img
 									src="Images/bottom6.svg"
 									alt=""
-									className="sixthCenterImg"
+									className={styles.sixthCenterImg}
 								/>
 							</div>
-							<div className="sixthCenterItem">
+							<div className={styles.sixthCenterItem}>
 								<img
 									src="Images/bottom7.svg"
 									alt=""
-									className="sixthCenterImg"
+									className={styles.sixthCenterImg}
 								/>
 							</div>
 						</div>
 
-						<div className="sixthFoot">
-							<div className="sixthFootItem">
+						<div className={styles.sixthFoot}>
+							<div className={styles.sixthFootItem}>
 								<img
 									src="/Images/bottom8.svg"
 									alt=""
-									className="sixthFootImg height100"
+									className={`${styles.sixthFootImg} ${styles.height100}`}
 								/>
 							</div>
-							<div className="sixthFootItem displayFlex">
+							<div className={`${styles.sixthFootItem} ${styles.displayFlex}`}>
 								<img
 									src="/Images/bottom9.svg"
 									alt=""
-									className="sixthFootImg"
+									className={styles.sixthFootImg}
 								/>
 								<img
 									src="/Images/bottom10.svg"
 									alt=""
-									className="sixthFootImg"
+									className={styles.sixthFootImg}
 								/>
 							</div>
-							<div className="sixthFootItem">
+							<div className={styles.sixthFootItem}>
 								<img
 									src="/Images/bottom11.svg"
 									alt=""
-									className="sixthFootImg height100"
+									className={`${styles.sixthFootImg} ${styles.height100}`}
 								/>
 							</div>
-							<div className="sixthFootItem displayFlex">
+							<div className={`${styles.sixthFootItem} ${styles.displayFlex}`}>
 								<img
 									src="/Images/bottom12.svg"
 									alt=""
-									className="sixthFootImg"
+									className={styles.sixthFootImg}
 								/>
 								<img
 									src="/Images/bottom13.svg"
 									alt=""
-									className="sixthFootImg"
+									className={styles.sixthFootImg}
 								/>
 							</div>
 						</div>
 					</div>
 				</div>
-
-				{/* bottom title */}
-				<a href="#" className="pageBottomTitle">
+				{/* Bottom title */}
+				<a href="#" className={styles.pageBottomTitle}>
 					ХОЧУ ЗАДАТЬ ВОПРОС
 				</a>
 			</div>

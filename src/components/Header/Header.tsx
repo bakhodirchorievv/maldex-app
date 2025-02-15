@@ -1,36 +1,33 @@
-import Head from "next/head";
 import React from "react";
-// import "./Header.css";
+
+import styles from "./Header.module.css";
 
 const Header = () => {
 	return (
 		<div>
-			<Head>
-				<link rel="stylesheet" href="/styles/Header.css" />
-			</Head>
-			<header className="header">
-				<div className="headerTop">
-					<div className="headTopItem">
+			<header className={styles.header}>
+				<div className={styles.headerTop}>
+					<div className={styles.headTopItem}>
 						<div>
 							<img src="/Images/MaldexLogo.svg" alt="" />
 						</div>
-						<div className="hInnerItem">
+						<div className={styles.hInnerItem}>
 							<img src="/Images/phoneM.svg" alt="" />
-							<a href="tel:88003336784" className="hInnerInfo">
+							<a href="tel:88003336784" className={styles.hInnerInfo}>
 								8-800-333-6784
 							</a>
 						</div>
-						<div className="hInnerItem">
+						<div className={styles.hInnerItem}>
 							<img src="/Images/mail.svg" alt="" />
-							<a href="mailto:info@maldex.ru" className="hInnerInfo">
+							<a href="mailto:info@maldex.ru" className={styles.hInnerInfo}>
 								info@maldex.ru
 							</a>
 						</div>
-						<div className="hInnerItem">
+						<div className={styles.hInnerItem}>
 							<img src="/Images/location.svg" alt="" />
 							<a
 								href="https://www.google.com/maps?q=Москва"
-								className="hInnerInfo"
+								className={styles.hInnerInfo}
 								target="_blank"
 								rel="noopener noreferrer"
 							>
@@ -38,26 +35,26 @@ const Header = () => {
 							</a>
 						</div>
 					</div>
-					<div className="headTopItem">
-						<p className="headTopInfo">
+					<div className={styles.headTopItem}>
+						<p className={styles.headTopInfo}>
 							Минимальная сумма заказа от 30 тыс рублей
 						</p>
 					</div>
-					<div className="headTopItem">
-						<p className="hInnerInfo">Доставка</p>
-						<p className="hInnerInfo">Оплата</p>
-						<p className="hInnerInfo">Контакты</p>
+					<div className={styles.headTopItem}>
+						<p className={styles.hInnerInfo}>Доставка</p>
+						<p className={styles.hInnerInfo}>Оплата</p>
+						<p className={styles.hInnerInfo}>Контакты</p>
 						<div>
-							<img src="/Images/heart.svg" alt="" className="heartImg" />
+							<img src="/Images/heart.svg" alt="" className={styles.heartImg} />
 						</div>
-						<div className="headPriceWrap">
-							<div className="numberThree">3</div>
-							<p className="headprice">14 619,00 ₽ </p>
+						<div className={styles.headPriceWrap}>
+							<div className={styles.numberThree}>3</div>
+							<p className={styles.headprice}>14 619,00 ₽ </p>
 						</div>
 					</div>
 				</div>
 
-				<div className="borderBottom"></div>
+				<div className={styles.borderBottom}></div>
 			</header>
 		</div>
 	);
